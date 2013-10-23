@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Example YA Content Template</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ 
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery.ui.all.css">
+<link href="http://ajax.aspnetcdn.com/ajax/bootstrap/2.3.1/css/bootstrap.css" rel="stylesheet"/>
+<link href="http://ajax.aspnetcdn.com/ajax/bootstrap/2.3.1/css/bootstrap-responsive.css" rel="stylesheet"/>
+
+<link href="css/screen.css" rel="stylesheet" media="screen">
+<link href="css/staff-reports.css" rel="stylesheet" media="screen">
+
+<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+
+<script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.0.6-development-only.js"></script>
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="js/staff-reports.js"></script>
+
+<style>
+	/* These are just temporary styles for this page */
+	body {
+		padding: 40px;
+		background-color: LightGray;
+	}
+	@media (max-width: 1200px) {
+		body {
+			padding: 0;
+		} 
+	}
+</style>
+
+
+
+</head>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+<body>
+
+
+<div class="container-fluid main-box">
+	<main class="ya-article">	
+		<aside class="ya-left-sidebar">
+			<!-- ad space content -->&nbsp;
+			<div style="height: 300px;"></div><!-- This are just temporary div for left menu -->
+			<nav class="ya-financial-reports">
+			   <h3>Financial Reports</h3>
+			   <ul>
+			      <li><a href="#">Revenue Analysis</a></li>
+			      <li><a href="#">Debits & Credit</a></li>
+			      <li><a href="#">Credit Invoices</a></li>
+			      <li><a href="#">Batch Distribution Summaries</a></li>
+			      <li><a href="#">Batch Transaction Listing</a></li>
+			   </ul>
+			</nav>
+
+
+		</aside><!-- end left sidebar -->
+
+		<!-- ################ Staff Reports ############### --> 
+		<section class="ya-staff-reports">
+			<!-- ################ Revenue Analysis ############### --> 
+			<article class="ya-widget ya-revenue-analysis">
+				<h2>Revenue Analysis</h2>
+				<p>A brief description of the report. Here is what this report is all about. Doesn't need much</p>
+				<div class="ya-run-report">
+					<div class="ya-run-report-item"><label>Run Report For:</label></div>
+					<div class="ya-run-report-item">
+						<input type="radio" id="revenue-c6"/>
+						<label for="revenue-c6">Yoga Alliance - c(6)</label>
+					</div>
+					<div class="ya-run-report-item">
+						<input type="radio" id="revenue-c3"/>
+						<label for="revenue-c3">Yoga Alliance Registry- c(3)</label>
+					</div>
+					
+				</div>
+				<div class="ya-staff-reports-alert">
+					<span data-icon="&#x52;" aria-hidden="true"></span>
+					Please select an organization to run this report for: 
+				</div><!-- end alert -->
+				<div class="ya-select-organization ya-staff-reports-block">
+					<div class="ya-organization-list">	
+						<div class="ya-gl-codes">	
+							<select multiple="multiple">
+								<option value="1">q0012345</option>
+								<option value="2">q0023843</option>
+								<option value="3">q00483728</option>
+							</select>
+						</div>
+						<div class="ya-select-org-btngroup">
+							<button type="button" class="btn">
+								Select All
+								<span data-icon="&#x44;" aria-hidden="true"></span>
+								<span data-icon="&#x44;" aria-hidden="true"></span>
+							</button><br/>
+							<button type="button" class="btn">
+								Add
+								<span data-icon="&#x44;" aria-hidden="true"></span>
+							</button><br/>
+							<button type="button" class="btn">
+								<span data-icon="&#x46;" aria-hidden="true"></span>
+								Remove
+							</button>
+						</div>
+						<div class="ya-included-report">	
+							<select multiple="multiple">
+								<option value="1">q00773848</option>
+								<option value="2">q008348237</option>
+							</select>
+						</div>
+					</div>	
+					<button type="button" class="btn ya-view-report-btn">
+						<span data-icon="&#x77;" aria-hidden="true"></span>View Report
+					</button>
+
+				</div>
+				<!-- SAMPLE REPORT SCREENSHOT -->
+				<img src="#" class="ya-sample-report">
+			</article><!-- end Revenue Analysis -->
+			
+		
+			<!-- ############## Debits and Credits ############## -->
+			<article class="ya-widget ya-debit-credit">
+				<h2>Debits and Credits</h2>
+				<p>A brief description of the report. Here is what this report is all about. Doesn't need much</p>
+				<div class="ya-run-report">
+					<div class="ya-run-report-item"><label>Run Report For:</label></div>
+					<div class="ya-run-report-item">
+						<input type="radio" id="debit-credit-c6"/>
+						<label for="debit-credit-c6">Yoga Alliance - c(6)</label>
+					</div>
+					<div class="ya-run-report-item">
+						<input type="radio" id="debit-credit-c3"/>
+						<label for="debit-credit-c3">Yoga Alliance Registry- c(3)</label>
+					</div>
+					
+				</div>
+				<div class="ya-staff-reports-block">
+					<div class="ya-staff-reports-date">	
+						<div class="ya-staff-reports-date-from">
+							<label class="ya-staff-datepicker-label">From</label>
+							<input type="text" class="ya-staff-datepicker"/>
+						</div>
+						<div class="ya-staff-reports-date-to">
+							<label class="ya-staff-datepicker-label">To</label>
+							<input type="text" class="ya-staff-datepicker"/>
+						</div>
+					</div>	
+					<button type="button" class="btn ya-view-report-btn">
+						<span data-icon="&#x77;" aria-hidden="true"></span>View Report
+					</button>
+
+				</div>
+				<!-- SAMPLE REPORT SCREENSHOT -->
+				<img src="#" class="ya-sample-report">
+			</article><!-- end Debits and Credits -->
+			
+			<!-- ############## Credit Invoices ############## -->
+			<article class="ya-widget ya-credit-invoices">
+				<h2>Credit Invoices</h2>
+				<p>A brief description of the report. Here is what this report is all about. Doesn't need much</p>
+				<div class="ya-run-report">
+					<div class="ya-run-report-item"><label>Run Report For:</label></div>
+					<div class="ya-run-report-item">
+						<input type="radio" id="credit-invoices-c6"/>
+						<label for="credit-invoices-c6">Yoga Alliance - c(6)</label>
+					</div>
+					<div class="ya-run-report-item">
+						<input type="radio" id="credit-invoices-c3"/>
+						<label for="credit-invoices-c3">Yoga Alliance Registry- c(3)</label>
+					</div>
+					
+				</div>
+				<div class="ya-staff-reports-block">
+					<div class="ya-staff-reports-date">	
+						<div class="ya-staff-reports-date-from">
+							<label class="ya-staff-datepicker-label">From</label>
+							<input type="text" class="ya-staff-datepicker"/>
+						</div>
+						<div class="ya-staff-reports-date-to">
+							<label class="ya-staff-datepicker-label">To</label>
+							<input type="text" class="ya-staff-datepicker"/>
+						</div>
+					</div>	
+					<button type="button" class="btn ya-view-report-btn">
+						<span data-icon="&#x77;" aria-hidden="true"></span>View Report
+					</button>
+
+				</div>
+				<!-- SAMPLE REPORT SCREENSHOT -->
+				<img src="#" class="ya-sample-report">
+
+			</article><!-- end Credit Invoices -->
+			
+			<!-- ############## Batch Distribution Summaries ############## -->
+			<article class="ya-widget ya-batch-distribution">
+				<h2>Batch Distribution Summaries</h2>
+				<p>A brief description of the report. Here is what this report is all about. Doesn't need much</p>
+				<div class="ya-run-report">
+					<div class="ya-run-report-item"><label>Run Report For:</label></div>
+					<div class="ya-run-report-item">
+						<input type="radio" id="batch-distribution-c6"/>
+						<label for="batch-distribution-c6">Yoga Alliance - c(6)</label>
+					</div>
+					<div class="ya-run-report-item">
+						<input type="radio" id="batch-distribution-c3"/>
+						<label for="batch-distribution-c3">Yoga Alliance Registry- c(3)</label>
+					</div>
+					
+				</div>
+				<div class="ya-staff-reports-block">
+					<div class="ya-staff-reports-date">	
+						<div class="ya-staff-reports-date-from">
+							<label class="ya-staff-datepicker-label">Day</label>
+							<input type="text" class="ya-staff-datepicker"/>
+						</div>
+					</div>	
+					<button type="button" class="btn ya-view-report-btn">
+						<span data-icon="&#x77;" aria-hidden="true"></span>View Report
+					</button>
+
+				</div>
+				<!-- SAMPLE REPORT SCREENSHOT -->
+				<img src="#" class="ya-sample-report">
+
+			</article><!-- end Batch Distribution Summaries -->
+			
+			<!-- ############## Batch Distribution Summaries ############## -->
+			<article class="ya-widget ya-batch-transaction">
+				<h2>Batch Transaction Log</h2>
+				<p>A brief description of the report. Here is what this report is all about. Doesn't need much</p>
+				<div class="ya-run-report">
+					<div class="ya-run-report-item"><label>Run Report For:</label></div>
+					<div class="ya-run-report-item">
+						<input type="radio" id="batch-transaction-c6"/>
+						<label for="batch-transaction-c6">Yoga Alliance - c(6)</label>
+					</div>
+					<div class="ya-run-report-item">
+						<input type="radio" id="batch-transaction-c3"/>
+						<label for="batch-transaction-c3">Yoga Alliance Registry- c(3)</label>
+					</div>
+					
+				</div>
+				<div class="ya-staff-reports-block">
+					<div class="ya-batch-ctrl-group">	
+						<div class="ya-staff-reports-date">
+							<label>Day</label>
+							<input type="text" class="ya-staff-datepicker"/>
+						</div>
+						<div class="clearfix"></div>
+						<div class="ya-payment-type">
+							<label for="payment-type">Payment Type</label>
+							<select id="payment-type">
+								<option value="0" selected="selected">Select All</option>
+							    <option value="1">test1</option>
+							    <option value="2">test2</option>
+							</select>
+						</div>
+						<div class="ya-staff-reports-date">
+							<label for="batch-number">Batch Number</label>
+							<input type="text" id="batch-number"/> <span>(optional)</span>
+						</div>
+					</div>	
+					<button type="button" class="btn ya-view-report-btn">
+						<span data-icon="&#x77;" aria-hidden="true"></span>View Report
+					</button>
+
+				</div>
+				<!-- SAMPLE REPORT SCREENSHOT -->
+				<img src="#" class="ya-sample-report">
+
+			</article><!-- end Batch Distribution Summaries -->
+			
+		</section><!-- END Staff Reports -->
+
+	</main><!-- end article -->		
+</div>
+
+
+</body>
+</html>
